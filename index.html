@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국립중앙도서관</title>
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="국립중앙도서관을 펼쳐 방문하신 것을 환영합니다..">
+    <meta name="author" content="강부원">
+    <meta name="keywords" content="도서관, 국립, 중앙, 국립중앙도서관">
+    <meta property="og:title" content="국립중앙도서관">
+    <meta property="og:image" content="img/og_800x400.png">
+    <meta property="og:site_name" content="국립중앙도서관">
+    <meta property="og:description" content="국립중앙도서관을 펼쳐 방문하신 것을 환영합니다..">
+
+    <meta name="twitter:image" content="img/og_120x120.png">
+    <meta name="twitter:description" content="국립중앙도서관을 펼쳐 방문하신 것을 환영합니다..">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media_574_768.css" media="screen and (min-width:574px) and (max-width:768px)">
+
+    <link rel="apple-touch-icon" sizes="57x57"
+        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60"
+        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72"
+        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76"
+        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114"
+        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"
+        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96"
+        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//favicon-16x16.png">
+    <link rel="manifest" href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage"
+        content="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--  폰트 cdn 사용 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- // 폰트 cdn 사용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 구글 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div id="header_top">
+                <div class="container">
+                    <a href="javascript:;" class="fr header_top_banner"></a>
+                    <a href="javascript:;" class="close_box01" onclick="header_popup()">닫기</a>
+                    <label><input type="checkbox" name="no_see" id="no_see">오늘하루 보지않기</label>
+                </div>
+            </div>
+            <!-- //#header_top -->
+            <div id="header_nav">
+                <div class="container cf">
+                    <ul class="fl cf">
+                        <li class="fl"><a href="javascript:;">사서지원서비스</a></li>
+                        <li class="fl"><a href="javascript:;">공공도서관지원서비스</a></li>
+                    </ul>
+                    <ul class="fr cf">
+                        <li class="fl"><a href="javascript:;">로그인</a></li>
+                        <li class="fl"><a href="javascript:;">회원가입</a></li>
+                        <li class="fl"><a href="javascript:;">내서재</a></li>
+                        <li class="fl"><a href="javascript:;">바구니</a></li>
+                        <li class="fl"><a href="javascript:;">ENGLISH</a></li>
+                        <li class="fl">
+                            <p><input type="text" name="search" id="search" placeholder="홈페이지 내 검색"><label
+                                    for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //#header_nav -->
+            <div id="header_inner_top" class="cf">
+                <div class="container cf">
+                    <p class="openMOgnb"><span></span><span></span><span></span></p>
+                    <h1 class="fl"><a href="javascript:;">문화체육관광부 국립중앙도서관<img src="img/revise_logo_main2.png"
+                                alt="국립중앙도서관 로고"></a></h1>
+                    <div id="bgimg" class="fr">
+                        <img src="img/clock2.png" alt="시계사진" class="fl">
+                        <!-- <img src="img/clock.png" alt="시계사진" class="fl">
+                        <h2 class="fl">7월23일</h2>
+                        <div>운영시간 10:00 ~ 18:00</div> -->
+                    </div>
+                </div>
+                <div class="MOclock"><p>07월 23일 <span>운영시간 10:00 ~ 18:00</span></p></div>
+            </div>
+            <!-- //#header_inner_top -->
+            <div id="gnb">
+                <div class="width100">
+                    <div class="container">
+                        <ul class="cf gnb_ul">
+                            <li class="fl">
+                                <h3><a href="javascript:;">자료검색</a></h3>
+                                <dl>
+                                    <dt><a href="javascript:;">소장자료</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">디지털화 자료</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">Web DB</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">신착자료</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">사서추천도서</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">영상자료 목록</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">국가자료종합목록</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">한국고문헌종합목록</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">국가전자도서관</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">근대문학종합목록</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">국가서지 LOD</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">본문검색 시범서비스</a></dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                            <li class="fl">
+                                <h3><a href="javascript:;">디지털컬렉션</a></h3>
+                                <dl>
+                                    <dt><a href="javascript:;">주제별컬렉션</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">대한민국 신문 아카이브</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">관보</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">해외 한국 관련 자료</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">OAK국가리포지터리</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">오아시스(OASIS)</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">책 읽어주는 도서관</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">전시컬렉션(온라인전시)</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">세계의 도서관</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">동아시아 디지털도서관(EADL)</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">코리안 메모리(시범페이지)</a></dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                            <li class="fl">
+                                <h3><a href="javascript:;">신청·참여</a></h3>
+                                <dl>
+                                    <dt><a href="javascript:;">자료신청안내</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">비치희망도서</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">상호대차</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">책다모아(기증)</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">저작권 이용허락</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">사서에게 물어보세요</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">나의 책, 나의 인문기행</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">연구정보서비스</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">견학</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">예약</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">사회봉사</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">교육/문화프로그램</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">메일링서비스</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">연계 API</a></dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                            <li class="fl">
+                                <h3><a href="sub_site_board/index.html">도서관 이용</a></h3>
+                                <dl>
+                                    <dt><a href="javascript:;">집에서 이용하는 도서관</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">본관 이용시간 및 이용증 발급</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">본관 자료실 안내</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">디지털도서관 안내</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">도서관 일정</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">편의시설</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">자료복사</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">전시</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">자주하는 질문</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">설문조사</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">오류신고</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">분실물찾기</a></dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                            <li class="fl">
+                                <h3><a href="javascript:;">도서관 소개</a></h3>
+                                <dl>
+                                    <dt><a href="javascript:;">국립중앙도서관</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">소속도서관</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">도서관 협력망</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">도서관소식</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">발간자료</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">정보공개</a></dt>
+                                    <dd></dd>
+                                    <dt><a href="javascript:;">관내사이트 안내</a></dt>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //#header -->
+        <div id="contents">
+            <div id="content_search">
+                <div class="container">
+                    <div>
+                        <div class="search_bar fl">
+                            <label><input type="search" placeholder="검색어를 입력해주세요"
+                                    class="content_search_input_search fl"></label>
+                            <div></div>
+                        </div>
+                        <input type="button" value="검색" class="content_search_input_button1 fl">
+                        <input type="button" value="상세검색" class="content_search_input_button2 fl">
+                    </div>
+                </div>
+            </div>
+            <!-- //#content_search -->
+            <div id="content_menu">
+                <div class="container">
+                    <ul class="cf">
+                        <li class="fl"><a href="javascript:;"><img src="img/menu01.png" alt="">자료 당일신청</a></li>
+                        <li class="fl"><a href="javascript:;"><img src="img/menu02.png" alt="">도서관 방문 예약</a></li>
+                        <li class="fl"><a href="javascript:;"><img src="img/menu03.png" alt="">디지털도서관 예약</a></li>
+                        <li class="fl"><a href="javascript:;"><img src="img/menu04.png" alt="">온라인 견학</a></li>
+                        <li class="fl"><a href="javascript:;"><img src="img/menu05.png" alt="">이용자 교육</a></li>
+                        <li class="fl"><a href="javascript:;"><img src="img/menu06.png" alt="">편의시설</a></li>
+                        <li class="fl"><a href="javascript:;"><img src="img/menu07.png" alt="">찾아오시는 길</a></li>
+                        <li class="fl">|</li>
+                        <li class="fl"><a href="javascript:;"><img src="img/menu08.png" alt="">전체보기/설정</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //#content_menu -->
+            <div id="content_banner">
+                <div class="container">
+                    <a href="javascript:;" class="cf">
+                        <p class="fl">국립중앙도서관 <span>실감서재 · 지식의 길</span>
+                        </p>
+                        <p class="fr">바로가기</p>
+                    </a>
+                </div>
+            </div>
+            <!-- //#content_banner -->
+            <div id="content_menu2">
+                <div class="container cf">
+                    <p class="cf">관내 사이트  <span class="fr"><a href="javascript:;">+</a></span><span class="fr uarr">&#94;</span></p>
+                    <div class="cf">
+                        <ul class="fl">
+                            <li><a href="javascript:;">일반이용자</a></li>
+                            <li><a href="javascript:;">사서·연구자</a></li>
+                            <li><a href="javascript:;">출판사</a></li>
+                        </ul>
+                        <div class="fl">
+                            <ul>
+                                <li><a href="javascript:;">COVID-19 도서관 서비스</a></li>
+                                <li><a href="javascript:;">대한민국신문아카이브</a></li>
+                                <li><a href="javascript:;">웹자원검색(OASIS)</a></li>
+                                <li><a href="javascript:;">책이음</a></li>
+                                <li><a href="javascript:;">국가자료종합목록</a></li>
+                                <li><a href="javascript:;">도서관 정보 나루</a></li>
+                                <li><a href="javascript:;">나의 책, 나의 인문기행</a></li>
+                                <li><a href="javascript:;">한국고문헌종합목록</a></li>
+                                <li><a href="javascript:;">국가전자도서관</a></li>
+                                <li><a href="javascript:;">북한자료센터</a></li>
+                                <li><a href="javascript:;">책바다(국가상호대차)</a></li>
+                                <li><a href="javascript:;">ISNI-KOREA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //content_menu2 -->
+            <div id="content_calendar">
+                <div class="container">
+                    <div>
+                        <div class="calender01">
+                            <span class="fl">도서관 일정</span>
+                            <span class="fr"><a href="javascript:;"><img src="img/white_plus.png" alt=""></a></span>
+                        </div>
+                        <div class="calender02">
+                            <span class="fl">신청, 참여</span>
+                            <span class="calendar_title_side fr">1/8</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="month">
+                            <div class="cf">
+                                <h3 class="fl">2022월 7월</h3>
+                                <div class="fr">
+                                    <span></span>
+                                    <span>정기휴관</span>
+                                    <span></span>
+                                    <span>임시휴관</span>
+                                </div>
+                                <div class="fr cf">
+                                    <span class="fl"></span>
+                                    <span class="fr">전시/교육</span>
+                                </div>
+                            </div>
+                            <div class="month_date">
+                                <span><img src="img/ic_main_arrow_prev.png" alt=""></span>
+                                <span>17</span>
+                                <span>18</span>
+                                <span>19</span>
+                                <span>20</span>
+                                <span>21</span>
+                                <span>22</span>
+                                <span>23</span>
+                                <span><img src="img/ic_main_arrow_next.png" alt=""></span>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="javascript:;"><span class="info_title">국립중앙도서관 지식의길</span><span class="info_text">지식의 길은 문학과 디지털기술을 접목한 실감 콘텐츠 체험 공간입니다.</span></a>
+                        </div>
+                        <div>
+                            <a href="javascript:;"><span class="info_title">사서에게 물어보세요</span><span class="info_text">일반인들이 궁금해하는 지식 및 학술정보에 대해 제공하는 학술정보 서비스</span></a>
+                        </div>
+                        <div>
+                            <a href="javascript:;"><span class="info_title">연구정보서비스</span><span class="info_text">학술연구활동을 지원, 연구활동에 집중할 수 있도록 연구정보서비스를 운영하고 가능하도록 지원한다.</span></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="calender01">
+                            <span class="fl">소식알림</span>
+                            <span class="calendar_title_side fr">1/11</span>
+                        </div>
+                        <div class="calender02">
+                            <span class="fl">주제별컬렉션</span>
+                            <span class="fr"><a href="javascript:;"><img src="img/white_plus.png" alt=""></a></span>
+                        </div>
+                    </div>
+                    <div class="cf">
+                        <div class="fl"><a href="javascript:;"><img src="img/main_wide_main_public_1.png" alt="소식이미지"></a></div>
+                        <div class="fl"><a href="javascript:;"><img src="img/main_wide_main_public_10.png" alt="유네스코와 한국"></a></div>
+                        <div class="fl"><a href="javascript:;"><img src="img/main_wide_main_public_11.png" alt="조선의 천문과 수학"></a></div>
+                        <div class="fl"><a href="javascript:;"><img src="img/main_wide_main_public_12.png" alt="우리 가슴에, 우리 고전을"></a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- //#content_calendar -->
+            <div id="content_book">
+                <div class="container">
+                    <ul class="fl">
+                        <li><a href="javascript:;">사서추천도서</a></li>
+                        <li><a href="javascript:;">신작자료</a></li>
+                        <li><a href="javascript:;">책 읽어주는 도서관</a></li>
+                        <li><a href="javascript:;">WEB DB</a></li>
+                    </ul>
+                    <ul class="fr">
+                        <li class="fl"><a href="javascript:;"><img src="img/book1.jpg" alt="책">
+                            <p class="book_title">삶은 속도가 아니라 방향이다</p>
+                            <p class="book_author">수영,전성민</p>
+                        </a></li>
+                        <li class="fl"><a href="javascript:;"><img src="img/book2.png" alt="책">
+                            <p class="book_title">결국 Z세대가 세상을 지배한다</p>
+                            <p class="book_author">김용섭</p>
+                        </a></li>
+                        <li class="fl"><a href="javascript:;"><img src="img/book3.jpg" alt="책">
+                            <p class="book_title">바람이 강하게 불고 있다</p>
+                            <p class="book_author">미우라시온</p>
+                        </a></li>
+                        <li class="fl"><a href="javascript:;"><img src="img/book4.png" alt="책">
+                            <p class="book_title">내가 원하는 것을 나도 모를 때</p>
+                            <p class="book_author">전승환</p>
+                        </a></li>
+                        <li class="fl"><a href="javascript:;"><img src="img/book5.png" alt="책">
+                            <p class="book_title">풍덩!</p>
+                            <p class="book_author">우지현</p>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //#content_book -->
+        </div>
+        <div id="content_bottom">
+            <div class="container cf">
+                <div class="fl">
+                    <ul class="cf">
+                        <li class="fl"><a href="javascript:;">공지사항</a></li>
+                        <li class="fl"><a href="javascript:;">행사안내</a></li>
+                        <li class="fl"><a href="javascript:;">인재채용</a></li>
+                        <li class="fr"><a href="javascript:;">+</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="javascript:;"><span class="fl blue_box">공지</span><p>&nbsp; 사회적 거리두기 의무화 조치 해제에 따른 도서관 이용 안내</p><span class="date">2022-04-15</span></a>
+                        </li>
+                        <li><a href="javascript:;">
+                                <p>국제회의장 외부석재 줄눈 보수 공사 알림</p><span class="date">2022-07-27</span>
+                            </a></li>
+                        <li><a href="javascript:;">
+                                <p>[디지털정보활용교육](작곡 프로그램을 활용한)인공지능 기술 감수성 교육 교육</p><span class="date">2022-07-25</span>
+                            </a></li>
+                        <li><a href="javascript:;">
+                                <p>국립중앙도서관 야간도서관 이용 안내</p><span class="date">2022-07-22</span>
+                            </a></li>
+                        <li><a href="javascript:;">
+                                <p>[1인 미디어 아카데미] 교사 크리에이터 양성 과정 교육생 모집 안내</p><span class="date">2022-07-18</span>
+                            </a></li>
+                        <li><a href="javascript:;">
+                                <p>[대면교육](리서치리터러시 아카데미) 연구지원을 위한 텍스트마이닝 활용법 교육</p><span class="date">2022-07-15</span>
+                            </a></li>
+                        <li><a href="javascript:;">
+                                <p>[1인 미디어 아카데미] 중장년 크리에이터 양성(기초) 과정 교육생 모집 안내</p><span class="date">2022-06-27</span>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="fr">
+                    <ul class="cf">
+                        <li class="fl"><a href="javascript:;">포토뉴스</a></li>
+                        <li class="fl"><a href="javascript:;">카드뉴스</a></li>
+                        <li class="fl"><a href="javascript:;">보도자료</a></li>
+                        <li class="fl"><a href="javascript:;">영상뉴스</a></li>
+                        <li class="fr"><a href="javascript:;">+</a></li>
+                    </ul>
+                    <ul>
+                        <li class="fl"><a href="javascript:;">
+                            <img src="img/photonews01.jpg" alt="포토뉴스사진">
+                            <p>2022.07.27_저자와의 만남(박숭현 박사)</p>
+                            <span class="date">2022-07-28</span>
+                            </a></li>
+                        <li class="fl"><a href="javascript:;">
+                            <img src="img/photonews02.jpg" alt="포토뉴스사진2">
+                            <p>경국대전 보물지정 특별전 '아! 조선 법전의 놀라운 세계'(~22.09.25)</p>
+                            <span class="date">2022-07-26</span>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //#contents -->
+        <footer id="footer">
+            <div id="footer_banner">
+                <div class="container cf">
+                    <ul class="fl cf">
+                        <li class="fl">
+                            <a href="javascript:;"><img src="img/banner_img1.png" alt="배너사진1"></a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;"><img src="img/banner_img2.png" alt="배너사진2"></a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;"><img src="img/banner_img3.png" alt="배너사진3"></a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;"><img src="img/banner_img4.png" alt="배너사진4"></a>
+                        </li>
+                    </ul>
+                    <ul class="fr cf">
+                        <li class="fl">
+                            <a href="javascript:;"><img src="img/banner_img5.png" alt="배너사진4"></a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;"><img src="img/banner_img6.png" alt="배너사진4"></a>
+                        </li>
+                        <li class="fl"><p>&lt;</p></li>
+                        <li class="fl"><p>&gt;</p></li>
+                        <li class="fl"><p>||</p></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //footer>banner -->
+            <div id="footer_nav">
+                <div class="container">
+                    <ul>
+                        <li class="fl"><a href="javascript:;">원격헬프데스크</a></li>
+                        <li class="fl"><a href="javascript:;">국민신문고</a></li>
+                        <li class="fl"><a href="javascript:;">클린신고센터</a></li>
+                        <li class="fl"><a href="javascript:;">찾아오시는 길</a></li>
+                        <li class="fl"><a href="javascript:;">사이트맵</a></li>
+                        <li class="fl"><a href="javascript:;">누리집이용가이드</a></li>
+                        <li class="fl"><a href="javascript:;">뷰어프로그램 안내</a></li>
+                    </ul>
+                    <ul>
+                        <li class="fr"><a href="javascript:;"><img src="img/footer_nav_logo.PNG" alt="푸터로고"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //footer>nav -->
+            <div id="footer_info">
+                <div class="container">
+                    <div class="cf">
+                        <ul>
+                            <li class="fl"><a href="javascript:;">개인정보처리방침</a></li>
+                            <li class="fl"><a href="javascript:;">국립중앙도서관 윤리강령</a></li>
+                            <li class="fl"><a href="javascript:;">도서관법령</a></li>
+                            <li class="fl"><a href="javascript:;">이용봉사현장</a></li>
+                            <li class="fl"><a href="javascript:;">사전정보공개</a></li>
+                            <li class="fl"><a href="javascript:;">저작권정책</a></li>
+                        </ul>
+                        <form action="#" class="fr">
+                            <select>
+                                <option>유관사이트</option>
+                                <option value="site">국립어린이도서관</option>
+                                <option value="site">국립세종도서관</option>
+                                <option value="site">국립장애인도서관</option>
+                            </select>
+                            <input type="button" value="이동">
+                        </form>
+                    </div>
+                    <div class="cf">
+                        <h2 class="fl"><a href="index.html"><img src="img/footer_logo.PNG" alt="푸터로고"></a></h2>
+                        <ul class="fl">
+                            <li><small>우편번호 06579 서울특별시 서초구 반포대로 201(반포동)</small></li>
+                            <li><small>문의전화 02-590-0500 팩스 02-590-0530</small></li>
+                            <li><small>Copyright© National Library of Korea. All rights reserved.</small></li>
+                        </ul>
+                        <ul class="cf">
+                            <li class="fr"><a href="javascript:;"><img src="img/footer_info_logo01.png" alt="로고2"></a></li>
+                            <li class="fr"><a href="javascript:;"><img src="img/footer_info_logo02.png" alt="로고2"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- //#wrap -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function header_popup(){
+            $('#header_top').hide();
+        }
+    </script>
+</body>
+
+</html>

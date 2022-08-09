@@ -1,0 +1,26 @@
+.bg1{background-color: #f2f2f2;}
+.bg2{background-color: #a7e4e4;}
+.bg3{background-color: #52d8dd;}
+.bg4{background-color: #29acd4;}
+.bg5{background-color: #3188df;}
+.bg6{background-color: #4f4de1;}
+
+
+#header_top{height: 200px;}
+#header_nav{height: 48px;}
+#header_inner_top{height: 96px;}
+#gnb{height: 60px; width: 100%;}
+#content_search{height: 185px;}
+#content_menu{height: 143.8px;}
+#content_banner{height: 66px;}
+#content_menu2{height: 306px;}
+#content_calendar{height: 616px;}
+#content_book{height: 422px;}
+#content_bottom{height: 364px;}
+#footer_banner{height: 108px;}
+#footer_nav{height: 54.09px;}
+#footer_info{height: 236.59px;}
+
+.container{max-width: 1240px; margin: 0 auto;}
+
+body{font-family: 'NotoKR', 'Malgun Gothic', 'gothic', '고딕', '새굴림', Arial, sans-serif;}

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항_국립중앙도서관</title>
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="국립중앙도서관 게시판 입니다..">
+    <meta name="author" content="강부원">
+    <meta name="keywords" content="도서관, 국립, 중앙, 국립중앙도서관">
+    <meta property="og:title" content="국립중앙도서관">
+    <meta property="og:image" content="img/og_800x400.png">
+    <meta property="og:site_name" content="국립중앙도서관">
+    <meta property="og:description" content="국립중앙도서관 게시판 입니다..">
+
+    <meta name="twitter:image" content="img/og_120x120.png">
+    <meta name="twitter:description" content="국립중앙도서관 게시판 입니다..">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../sub_site_board/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//favicon-16x16.png">
+    <link rel="manifest" href="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../sub_site_board/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  폰트 cdn 사용 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- // 폰트 cdn 사용 -->
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div id="header_nav">
+                <div class="container cf">
+                    <h1 class="fl">
+                        <a href="../index.html">
+                            <img src="img/revise_logo_sub.png" alt="국립중앙도서관 로고">
+                        </a>
+                    </h1>
+                    <ul class="fr cf">
+                        <li class="fl"><a href="javascript:;" class="fc1">로그인</a></li>
+                        <li class="fl"><a href="javascript:;" class="fc2">회원가입</a></li>
+                        <li class="fl"><a href="javascript:;" class="fc2">내서제</a></li>
+                        <li class="fl"><a href="javascript:;" class="fc2">바구니</a></li>
+                        <li class="fl"><a href="javascript:;" class="fc2">ENGLISH</a></li>
+                        <li class="fl">
+                            <p><input type="text" name="search" id="search" placeholder="홈페이지 내 검색"><label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //#header_nav -->
+            <div id="header_inner_bottom">
+                <nav id="gnb">
+                    <div class="container">
+                        <ul class="cf header_inner_bottom_ul">
+                            <li class="fl"><a href="javascript:;">자료검색</a>
+                            <div class="width100">
+                                <ul>
+                                    <li><a href="">asdf</a></li>
+                                    <li><a href="">asdf</a></li>
+                                    <li><a href="">asdf</a></li>
+                                    <li><a href="">asdf</a></li>
+                                </ul>
+                            </div>
+                            </li>
+                            <li class="fl"><a href="javascript:;">디지털컬렉션</a></li>
+                            <li class="fl"><a href="javascript:;">신청·참여</a></li>
+                            <li class="fl"><a href="javascript:;">도서관 이용</a></li>
+                            <li class="fl"><a href="javascript:;">도서관 소개</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- //#header_inner_bottom -->
+        </header>
+        <!-- //#header -->
+        <div id="contents">
+            <div id="content_search">
+                <div class="container">
+                    <div>
+                        <input type="search" id="contents_search" placeholder="검색어를 입력해주세요" class=" fl">
+                        <div class=" fl"></div>
+                        <i class="fa-solid fa-keyboard fr"></i>
+                        <label for="contents_search"><i class="fa-solid fa-magnifying-glass fr"></i></label>
+                    </div>
+                </div>
+            </div>
+            <!-- //#content_search -->
+            <div id="content_board">
+                <div class="container">
+                    <div class="board_menu fl">
+                        <h2>도서관이용</h2>
+                        <div>
+                            <a href="javascript:;">집에서 이용하는 도서관</a>
+                        </div>
+                        <!--  -->
+                        <div>
+                            <input type="radio" name="board_menu_checked" id="board_menu01">
+                            <div>
+                                <label for="board_menu01">본관 이용시간 및 이용증 발급</label>
+                                <ul>
+                                    <li><a href="javascript:;">주간이용</a></li>
+                                    <li><a href="javascript:;">야간이용</a></li>
+                                </ul>
+                                <p>+</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div>
+                            <input type="radio" name="board_menu_checked" id="board_menu02">
+                            <div>
+                                <label for="board_menu02">본관 자료실 안내</label>
+                                <ul>
+                                    <li><a href="javascript:;">본관자료실 안내</a></li>
+                                    <li><a href="javascript:;">준수사항</a></li>
+                                </ul>
+                                <p>+</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div>
+                            <input type="radio" name="board_menu_checked" id="board_menu03">
+                            <div>
+                                <label for="board_menu03">디지털도서관 안내</label>
+                                <ul>
+                                    <li><a href="javascript:;">도서관소개</a></li>
+                                    <li><a href="javascript:;">준수사항</a></li>
+                                    <li><a href="javascript:;">이용시간 및 절차</a></li>
+                                    <li><a href="javascript:;">시설 및 예약 안내</a></li>
+                                </ul>
+                                <p>+</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div>
+                            <input type="radio" name="board_menu_checked" id="board_menu04">
+                            <div>
+                                <label for="board_menu04">도서관 일정</label>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div>
+                            <input type="radio" name="board_menu_checked" id="board_menu05">
+                            <div>
+                                <label for="board_menu05">편의시설</label>
+                                <ul>
+                                    <li><a href="javascript:;">식당</a></li>
+                                    <li><a href="javascript:;">북카페</a></li>
+                                    <li><a href="javascript:;">편의점</a></li>
+                                    <li><a href="javascript:;">예식장 대관</a></li>
+                                    <li><a href="javascript:;">주차안내</a></li>
+                                    <li><a href="javascript:;">무선 인터넷</a></li>
+                                </ul>
+                                <p>+</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div>
+                            <input type="radio" name="board_menu_checked" id="board_menu06">
+                            <div>
+                                <label for="board_menu06">자료복사</label>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div>
+                            <input type="radio" name="board_menu_checked" id="board_menu07">
+                            <div>
+                                <label for="board_menu07">전시</label>
+                                <ul>
+                                    <li><a href="javascript:;">전시</a></li>
+                                    <li><a href="javascript:;">기록매체박물관</a></li>
+                                    <li><a href="javascript:;">실감서재</a></li>
+                                    <li><a href="javascript:;">지식의 길</a></li>
+                                </ul>
+                                <p>+</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div>
+                            <input type="radio" name="board_menu_checked" id="board_menu08">
+                            <div>
+                                <label for="board_menu08">자주하는 질문</label>
+                                <ul>
+                                    <li><a href="javascript:;">본관</a></li>
+                                    <li><a href="javascript:;">디지털도서관</a></li>
+                                </ul>
+                                <p>+</p>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div>
+                            <input type="radio" name="board_menu_checked" id="board_menu09">
+                            <div>
+                                <label for="board_menu09">설문조사</label>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div>
+                            <input type="radio" name="board_menu_checked" id="board_menu10">
+                            <div>
+                                <label for="board_menu10">오류신고</label>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="last_div">
+                            <input type="radio" name="board_menu_checked" id="board_menu11">
+                            <div>
+                                <label for="board_menu11">분실물찾기</label>
+                            </div>
+                        </div>
+                        <!--  -->
+
+                    </div>
+                    <div class="board_list fl">
+                        <div class="board_list_top">
+                            <div class="nav_right">
+                                <div>
+                                    <span><a href="../index.html"><i class="fa-solid fa-house fc3"></i></a></span>
+                                    <span>></span>
+                                    <span> 도서관 이용 </span>
+                                    <span>></span>
+                                    <span> 자주하는 질문 </span>
+                                    <span>></span>
+                                    <span> 본관</span>
+                                </div>
+                            </div>
+                            <div class="nav_mid cf">
+                                <h2 class="fl">본관</h2>
+                                <div class="fr">
+                                    <input type="button" value="-">
+                                    <span><a href="javascript:;">글자크기</a></span>
+                                    <input type="button" value="+">
+                                    <span><a href="javascript:;"><i class="fa-solid fa-print"></i></a></span>
+                                    <span><a href="javascript:;"><i class="fas fa-thumbtack"></i></a></span>
+                                    <span><a href="javascript:;"><i class="fas fa-share-alt"></i></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //board_list_top -->
+                        <div class="board_main_title">자주하는 질문 <span>BEST 5</span></div>
+                        <!-- board_main_title -->
+                        <div class="board_main">
+                            <div class="board_main_wrap cf">
+                                <input type="radio" name="question" id="question01">
+                                <div class="fl"><i class="fa-solid fa-q"></i></div>
+                                <div class="fl">
+                                    <label for="question01">도서관 방문 예약은 어떻게 해야하나요?</label>
+                                </div>
+                                <div class="arrow fr"></div>
+                                <div class="board_main_content_wrap fl">
+                                    <div class="board_main_answer_title">
+                                        <a href="javascript:;">도서관 방문 사전 예약 (사전방문예약 바로가기)</a>
+                                    </div>
+                                    <div class="board_main_answer">
+                                        <div>도서관 방문 1일 전 홈페이지를 통한 온라인 예약 (*사전예약 필수)</div>
+                                        <div>※ 주말이나 휴관일 다음날 방문은 직전 평일 운영일에 예약</div>
+                                        <div>(예시: 방문일이 토, 일, 월요일인 경우 직전 금요일에 예약 / 방문일이 정기휴관일 다음날인 화요일인 경우 직전 금요일에 예약) 예약 시간 : 월~금 10:00~24:00 (주말, 공휴일 등 휴관일 제외)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="board_main">
+                            <div class="board_main_wrap cf">
+                                <input type="radio" name="question" id="question02">
+                                <div class="fl"><i class="fa-solid fa-q"></i></div>
+                                <div class="fl">
+                                    <label for="question02">도서관을 처음 이용하려고 합니다. 어떤 절차로 이용하여야 합니까?</label>
+                                </div>
+                                <div class="arrow fr"></div>
+                                <div class="board_main_content_wrap fl">
+                                    <div class="board_main_answer_title">신분증을 지참하고 1층 이용증 발급실에서 이용자 등록(이용자 등록은 인터넷으로도 하실 수 있습니다.) 및 이용증을 발급받으신 후, 필기도구 이외의 개인 소지품은 1층 물품보관실에 보관하시고 이용하시면 됩니다.</div>
+                                    <div>&nbsp; </div>
+                                    <div class="board_main_answer">또한 도서관 소장 자료는 도서관 내에서만 이용하실 수 있으며, 개인 책을 가지고 공부할 수 있는 일반열람실은 운영하지 않습니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="board_main">
+                            <div class="board_main_wrap cf">
+                                <input type="radio" name="question" id="question03">
+                                <div class="fl"><i class="fa-solid fa-q"></i></div>
+                                <div class="fl">
+                                    <label for="question03">도서관 책을 밖으로 빌려갈 수 있나요?</label>
+                                </div>
+                                <div class="arrow fr"></div>
+                                <div class="board_main_content_wrap fl">
+                                    <div class="board_main_answer_title">국립중앙도서관은 국가를 대표하는 도서관으로서 지역의 공공도서관과는 달리 국내외 자료의 수집과 보존을 주요업무로 수행하고 있는 도서관으로 소장 자료는 관외대출이 되지 않고 자료실(도서관) 내에서만 이용하실 수 있습니다.</div>
+                                    <div>&nbsp;</div>
+                                    <div class="board_main_answer">아울러 관외대출은 기관대출만 가능하며, 기관대출이란 국가 및 지방자치단체, 비영리법인 등이 법적증거물, 전시목적 등 업무상 필요에 의해 대출하는 것을 말하며, “국립중앙도서관 자료대출규정”에 정해진 소정의 신청서를 첨부한 기관장의 공문을 국립중앙도서관에 접수한 후 대출이 가능합니다</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="board_main">
+                            <div class="board_main_wrap cf">
+                                <input type="radio" name="question" id="question04">
+                                <div class="fl"><i class="fa-solid fa-q"></i></div>
+                                <div class="fl">
+                                    <label for="question04">복사 및 출력을 하려면 어떻게 하나요?</label>
+                                </div>
+                                <div class="arrow fr"></div>
+                                <div class="board_main_content_wrap fl">
+                                    <div class="board_main_answer_title">복사는 포인트를 충전하여 이용할 수 있으며, 본관, 디지털도서관 프린터 출력시 포인트충전, 신용카드, 체크카드, T머니를 사용하여 가능합니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="board_main">
+                            <div class="board_main_wrap cf">
+                                <input type="radio" name="question" id="question05">
+                                <div class="fl"><i class="fa-solid fa-q"></i></div>
+                                <div class="fl">
+                                    <label for="question05">비치희망 신청은 어떻게 해야 하나요?</label>
+                                </div>
+                                <div class="arrow fr"></div>
+                                <div class="board_main_content_wrap fl">
+                                    <div class="board_main_answer_title">자료검색에서 찾고자 하는 자료가 검색결과에 없을 경우 “비치희망신청” 클릭을 통해 신청하실 수 있습니다. 로그인 후 신청하시고자 하는 자료명, 저자명, 출판사 등을 입력하시면 됩니다.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="board_main_search">
+                            <div>
+                                <div class="fl">
+                                    <div>전체 <span> 114</span>건</div>
+                                </div>
+                                <div class="fr">
+                                    <form action="#">
+                                        <fieldset>
+                                            <select>
+                                                <option>카테고리 전체</option>
+                                                <option value="도서관이용일반">도서관이용일반</option>
+                                                <option value="자료복사및촬영">자료복사및촬영</option>
+                                                <option value="자료검색및대출">자료검색및대출</option>
+                                                <option value="견학관련">견학관련</option>
+                                                <option value="비치희망자료신청">비치희망자료신청</option>
+                                                <option value="회원가입관련">회원가입관련</option>
+                                                <option value="ISSN관련">ISSN관련</option>
+                                                <option value="ISBN관련">ISBN관련</option>
+                                                <option value="KOLAS관련">KOLAS관련</option>
+                                                <option value="야간도서관이용관련">야간도서관이용관련</option>
+                                                <option value="통합회원관련">통합회원관련</option>
+                                                <option value="책다모아(기증)">책다모아(기증)</option>
+                                            </select>
+                                            <input type="button" value="보기">
+                                            <select>
+                                                <option value="전체">전체</option>
+                                                <option value="제목">제목</option>
+                                                <option value="내용">내용</option>
+                                            </select>
+                                            <input type="search" placeholder="검색어를 입력해주세요.">
+                                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="board_main">
+                            <div class="board_main_wrap cf">
+                                <input type="radio" name="question" id="question06">
+                                <div class="fl"><i class="fa-solid fa-q"></i></div>
+                                <div class="fl">
+                                    <label for="question06">[도서관이용일반]도서관 방문 예약은 어떻게 해야하나요?</label>
+                                </div>
+                                <div class="arrow fr"></div>
+                                <div class="board_main_content_wrap fl">
+                                    <div class="board_main_answer_title">
+                                        <a href="javascript:;">도서관 방문 사전 예약 (사전방문예약 바로가기)</a>
+                                    </div>
+                                    <div class="board_main_answer">
+                                        <div>도서관 방문 1일 전 홈페이지를 통한 온라인 예약 (*사전예약 필수)</div>
+                                        <div>※ 주말이나 휴관일 다음날 방문은 직전 평일 운영일에 예약</div>
+                                        <div>(예시: 방문일이 토, 일, 월요일인 경우 직전 금요일에 예약 / 방문일이 정기휴관일 다음날인 화요일인 경우 직전 금요일에 예약) 예약 시간 : 월~금 10:00~24:00 (주말, 공휴일 등 휴관일 제외)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="board_main">
+                            <div class="board_main_wrap cf">
+                                <input type="radio" name="question" id="question07">
+                                <div class="fl"><i class="fa-solid fa-q"></i></div>
+                                <div class="fl">
+                                    <label for="question07">[책다모아](기증)무엇이든 기증할 수 있나요?</label>
+                                </div>
+                                <div class="arrow fr"></div>
+                                <div class="board_main_content_wrap fl">
+                                    <div class="board_main_answer_title">국내 발행 일반도서, 어린이·청소년도서, 학술도서, 연구보고서, 세미나·회의자료, 한국관련외국자료 등을 기증받고 있으며, 기증 제외 자료는 다음과 같습니다.</div>
+                                    <div>&nbsp; </div>
+                                    <div class="board_main_answer">또한 도서관 소장 자료는 도서관 내에서만 이용하실 수 있으며, 개인 책을 가지고 공부할 수 있는 일반열람실은 운영하지 않습니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="board_main">
+                            <div class="board_main_wrap cf">
+                                <input type="radio" name="question" id="question08">
+                                <div class="fl"><i class="fa-solid fa-q"></i></div>
+                                <div class="fl">
+                                    <label for="question08">[책다모아](기증)방법과 절차는 어떻게 되나요?</label>
+                                </div>
+                                <div class="arrow fr"></div>
+                                <div class="board_main_content_wrap fl">
+                                    <div class="board_main_answer_title">국립중앙도서관 누리집(신청·참여>책다모아(기증)>기증신청)에서 기증신청서를 작성하신 후 기증방법(도서관에 직접방문, 우편발송, 우체국 택배)에 따라 자료를 기증하시면 됩니다. 택배 발송은 직접 우체국에 접수하여 자료를 보내주시고, 다른 택배사를 이용하실 경우 담당자에게 사전 연락 바랍니다.</div>
+                                    <div>&nbsp; </div>
+                                    <div class="board_main_answer">※ 기증 상담 ☎ 02-590-0700 (교환 4)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="board_main">
+                            <div class="board_main_wrap cf">
+                                <input type="radio" name="question" id="question09">
+                                <div class="fl"><i class="fa-solid fa-q"></i></div>
+                                <div class="fl">
+                                    <label for="question09">[책다모아](기증)기증자료는 어떻게 처리하나요?</label>
+                                </div>
+                                <div class="arrow fr"></div>
+                                <div class="board_main_content_wrap fl">
+                                    <div class="board_main_answer_title">기증자료 중 국립중앙도서관에 미소장된 자료는 장서로 등록하며, 이미 소장된 자료는 정보소외기관으로 재기증됩니다. 그리고 재기증되지 못한 자료는 우리 도서관에서의 원문 이용 서비스를 위한 디지타이징 자료로 활용될 수 있습니다. 다만, 디지타이징에 활용된 자료와 오・훼손 등으로 재기증이 어려운 자료는 폐기될 수 있습니다.</div>
+                                    <div>&nbsp; </div>
+                                    <div class="board_main_answer">※ 기증 상담 ☎ 02-590-0700 (교환 4)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="board_main">
+                            <div class="board_main_wrap cf">
+                                <input type="radio" name="question" id="question10">
+                                <div class="fl"><i class="fa-solid fa-q"></i></div>
+                                <div class="fl">
+                                    <label for="question10">[책다모아](기증)기증자료 인수증을 발급하나요?</label>
+                                </div>
+                                <div class="arrow fr"></div>
+                                <div class="board_main_content_wrap fl">
+                                    <div class="board_main_answer_title">기증한 자료에 대하여 기증자료 인수증을 발급해 드리고 있습니다. 필요하신 기증자는 아래로 전화주시거나, 기증신청 시 "기타"란에 작성하여 요청해 주시기 바랍니다.</div>
+                                    <div>&nbsp; </div>
+                                    <div class="board_main_answer">※ 기증 상담 ☎ 02-590-0700 (교환 4)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="board_main">
+                            <div class="board_main_wrap cf">
+                                <input type="radio" name="question" id="question11">
+                                <div class="fl"><i class="fa-solid fa-q"></i></div>
+                                <div class="fl">
+                                    <label for="question11">[책다모아](기증)국립중앙도서관으로부터 책을 기증받으려면?</label>
+                                </div>
+                                <div class="arrow fr"></div>
+                                <div class="board_main_content_wrap fl">
+                                    <div class="board_main_answer_title">국립중앙도서관은 개인 및 단체로부터 기증받아 수집한 자료를 작은 도서관 및 병영도서관 등 정보소외기관에 재기증하고 있습니다.</div>
+                                    <div>&nbsp; </div>
+                                    <div class="board_main_answer">재기증을 원하는 기관은 국립중앙도서관 누리집 (신청·참여>책다모아(기증)>기증신청>재기증신청), 전화(02-590-0700(교환 4), e-mail(bookthemore@korea.kr)로 신청해 주시면 됩니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="board_main">
+                            <div class="board_main_wrap cf">
+                                <input type="radio" name="question" id="question12">
+                                <div class="fl"><i class="fa-solid fa-q"></i></div>
+                                <div class="fl">
+                                    <label for="question12">[책다모아](기증)휴면계정 해제 방법</label>
+                                </div>
+                                <div class="arrow fr"></div>
+                                <div class="board_main_content_wrap fl">
+                                    <div class="board_main_answer_title">국립중앙도서관 통합회원이 2년 이상 서비스를 이용하지 않으면 계정이 휴면 상태로 전환됩니다.
+                                        휴면 상태로 전환될 경우 해당 계정의 개인정보는 별도로 안전하게 분리보관 되며, 다시 서비스를 이용하기 위해서는 휴면계정 해제를 위한 본인인증이 필요합니다.
+                                        휴면계정의 해제를 위해서는 홈페이지 로그인 화면에서 로그인을 하고, 로그인 직후 확인되는 휴면계정 해제 페이지에서 본인인증을 완료하면 됩니다.
+                                        (※ 회원 아이디 또는 비밀번호를 잊은 경우: ‘회원 아이디 찾기/비밀번호 찾기’ 메뉴를 이용하여 해당 정보를 확인한 후 로그인)</div>
+                                    <div>&nbsp; </div>
+                                    <div class="board_main_answer">재기증을 원하는 기관은 국립중앙도서관 누리집 (신청·참여>책다모아(기증)>기증신청>재기증신청), 전화(02-590-0700(교환 4), e-mail(bookthemore@korea.kr)로 신청해 주시면 됩니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //#contents -->
+        <footer id="footer">
+            <div id="footer_nav">
+                <div class="container">
+                    <ul>
+                        <li class="fl"><a href="javascript:;">원격헬프데스크</a></li>
+                        <li class="fl"><a href="javascript:;">국민신문고</a></li>
+                        <li class="fl"><a href="javascript:;">클린신고센터</a></li>
+                        <li class="fl"><a href="javascript:;">찾아오시는 길</a></li>
+                        <li class="fl"><a href="javascript:;">사이트맵</a></li>
+                        <li class="fl"><a href="javascript:;">누리집이용가이드</a></li>
+                        <li class="fl"><a href="javascript:;">뷰어프로그램 안내</a></li>
+                    </ul>
+                    <ul>
+                        <li class="fr"><a href="javascript:;"><img src="img/footer_nav_logo.PNG" alt="푸터로고"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //footer>nav -->
+            <div id="footer_info">
+                <div class="container">
+                    <div class="cf">
+                        <ul>
+                            <li class="fl"><a href="javascript:;">개인정보처리방침</a></li>
+                            <li class="fl"><a href="javascript:;">국립중앙도서관 윤리강령</a></li>
+                            <li class="fl"><a href="javascript:;">도서관법령</a></li>
+                            <li class="fl"><a href="javascript:;">이용봉사현장</a></li>
+                            <li class="fl"><a href="javascript:;">사전정보공개</a></li>
+                            <li class="fl"><a href="javascript:;">저작권정책</a></li>
+                        </ul>
+                        <form action="#" class="fr">
+                            <select>
+                                <option>유관사이트</option>
+                                <option value="site">국립어린이도서관</option>
+                                <option value="site">국립세종도서관</option>
+                                <option value="site">국립장애인도서관</option>
+                            </select>
+                            <input type="button" value="이동">
+                        </form>
+                    </div>
+                    <div class="cf">
+                        <h2 class="fl"><a href="index.html"><img src="img/footer_logo.PNG" alt="풋터로고"></a></h2>
+                        <ul class="fl">
+                            <li><small>우편번호 06579 서울특별시 서초구 반포대로 201(반포동)</small></li>
+                            <li><small>문의전화 02-590-0500 팩스 02-590-0530</small></li>
+                            <li><small>Copyright© National Library of Korea. All rights reserved.</small></li>
+                        </ul>
+                        <ul class="cf">
+                            <li class="fr"><a href="javascript:;"><img src="img/footer_info_logo01.png" alt="로고2"></a></li>
+                            <li class="fr"><a href="javascript:;"><img src="img/footer_info_logo02.png" alt="로고2"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- //#wrap -->
+</body>
+
+</html>
