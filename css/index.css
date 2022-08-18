@@ -49,8 +49,8 @@
 
 
 /* 메뉴 댑스 */
-#gnb .width100 .container ul::after{content: ''; width: 100%; height: 60px; border-bottom: 1px solid #d3d3d3; display: block; position: absolute; top: 0; left: 0;}
-#gnb .gnb_ul li dl{border-left:1px solid #d3d3d3}
+#gnb .width100 .container ul::after{content: ''; width: 100%; height: 60px; border-bottom: 1px solid #d3d3d3; display: block; position: absolute; top: 0; left: 0; pointer-events: none;}
+#gnb .gnb_ul li dl{border-left:1px solid #d3d3d3;}
 #gnb .gnb_ul li:nth-child(1) dl{border:none;}
 .gnb_ul>li>h3{border-bottom: 1px solid #d3d3d3;}
 .gnb_ul>li>dl{margin-left: 45px;height: auto; padding: 20px 16px 30px 17px; }
