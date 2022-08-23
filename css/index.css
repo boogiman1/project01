@@ -120,7 +120,7 @@
 
 
 /* content_calendar */
-#content_calendar{background: linear-gradient(-45deg, #3669ac, #329bba);}
+#content_calendar{background:url(../img/wide_bg.png) 0 0 no-repeat, linear-gradient(-45deg, #3669ac, #329bba) ; background-size: 100% 100%;}
 
 #content_calendar>.container{padding:50px 0;}
 #content_calendar>.container>div>span{font-size: 20px; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; color: white;}
