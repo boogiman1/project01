@@ -115,7 +115,7 @@
 #content_bottom>.container>div:nth-child(2)>ul:last-child>li>a>p+span.date{float: none;}
 #content_bottom>.container>div:nth-child(2)>ul:nth-child(2)>li:last-child{display: none;}
 
-/* #footer_nav */
+/* #footer_banner */
 #footer #footer_banner .container{display: flex;}
 #footer #footer_banner .container ul{float: none; display: flex; justify-content: space-evenly; align-items: center;}
 #footer #footer_banner .container ul li{float: none; width: 100%;}
@@ -127,3 +127,23 @@
 
 #footer #footer_banner .container ul:last-child{width: 40%;}
 #footer #footer_banner .container ul:last-child li p{margin-top: 4px;}
+/* //#footer_banner */
+
+#footer #footer_nav{width: 100%;}
+#footer #footer_nav .container{width: 100%; display: flex;}
+#footer #footer_nav .container ul{ overflow: hidden;}
+#footer #footer_nav .container ul li{float: none;}
+#footer #footer_nav .container ul li a{font-size: 16px;}
+#footer #footer_nav .container ul:first-child{width: 100%; display: flex; justify-content: center;}
+#footer #footer_nav .container ul:first-child li a{padding: 0 9px 0;}
+#footer #footer_nav .container ul:last-child{display: none;}
+/* //#footer_nav */
+
+#footer #footer_info .container div:first-child{width: 100%; display: flex; justify-content: center; flex-wrap: wrap;}
+#footer #footer_info .container div:first-child ul{display: flex; align-items: center; margin-bottom: 24px;}
+#footer #footer_info .container div:first-child ul li{float: none;}
+#footer #footer_info .container div:first-child form{float: none;}
+#footer #footer_info .container div:first-child form select{width: 160px;}
+
+#footer #footer_info .container div:last-child{width: 100%; display: flex; justify-content: space-evenly;}
+#footer #footer_info .container div:last-child h2{margin: 0;}
