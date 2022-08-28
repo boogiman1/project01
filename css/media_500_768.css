@@ -55,8 +55,14 @@
 #content_menu2 .container > p span a{font-weight: 400; font-size: 30px;}
 #content_menu2 .container > div > ul{float: none; display: flex;}
 #content_menu2 .container > div > ul>li{width: 33.3%;}
-#content_menu2 .container > div > ul li a{font-size: 14px; display: inline; font-weight: 300;}
-#content_menu2 .container > div > ul>li:first-child{border-left: 0; border-top: 2px solid #329bba; }
+#content_menu2 .container > div > ul li a{font-size: 14px;  display: inline-block; width: 100%; font-weight: 300; line-height: 42px;}
+#content_menu2 .container > div > ul>li:nth-child(1) a{border-left: 0; border-top: 3px solid #329bba;}
+#content_menu2 .container > div > ul>li:nth-child(2) a{border-left: 0; border-top: 3px solid #366eae;}
+#content_menu2 .container > div > ul>li:nth-child(3) a{border-left: 0; border-top: 3px solid #be5016;}
+#content_menu2>div>div>ul>li>a.active{background-color: #fff;}
+#content_menu2>div>div>ul>li:nth-child(1)>a.fontC1{color: #329bba; background-color: #fff;}
+#content_menu2>div>div>ul>li:nth-child(2)>a.fontC2{color: #366eae; background-color: #fff;}
+#content_menu2>div>div>ul>li:nth-child(3)>a.fontC3{color: #be5016; background-color: #fff;}
 #content_menu2 div>p span >a{position: unset;}
 .uarr{display: none;}
 #content_menu2 .container div div{overflow: hidden; height: 106px; float: none; width: 100%;}
@@ -126,17 +132,12 @@
 #content_bottom>.container>div:nth-child(2)>ul:nth-child(2)>li:last-child{display: none;}
 
 /* #footer_banner */
-#footer #footer_banner .container{display: flex;}
-#footer #footer_banner .container ul{float: none; display: flex; justify-content: space-evenly; align-items: center;}
-#footer #footer_banner .container ul li{float: none; width: 100%;}
-#footer #footer_banner .container ul:last-child li:nth-child(3){width: auto;}
-#footer #footer_banner .container ul:last-child li:nth-child(4){width: auto;}
-#footer #footer_banner .container ul:last-child li:nth-child(5){width: auto;}
-#footer #footer_banner .container ul li a img{margin-right: 0;}
-#footer #footer_banner .container ul:first-child{width: 60%;}
+#footer #footer_banner .container{display: flex; justify-content: center;}
+#footer #footer_banner .container ul{float: none; display: flex; justify-content: space-evenly; align-items: center; width: 100%; border: none; margin: 0;}
+#footer #footer_banner .container ul li{float: none; width: 20%;}
+#footer #footer_banner .container ul li a img{margin-right: 0; width: 100%;}
 
-#footer #footer_banner .container ul:last-child{width: 40%;}
-#footer #footer_banner .container ul:last-child li p{margin-top: 4px;}
+#footer #footer_banner .container ul:last-child{display: none;}
 /* //#footer_banner */
 
 

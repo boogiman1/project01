@@ -55,8 +55,15 @@
 #content_menu2 .container > p span a{font-weight: 400; font-size: 30px;}
 #content_menu2 .container > div > ul{float: none; display: flex;}
 #content_menu2 .container > div > ul>li{width: 33.3%;}
-#content_menu2 .container > div > ul li a{font-size: 14px; display: inline;}
-#content_menu2 .container > div > ul>li:first-child{border-left: 0; border-top: 2px solid #329bba; }
+#content_menu2 .container > div > ul li a{font-size: 14px; display: inline-block; width: 100%; line-height: 34px;}
+#content_menu2 .container > div > ul>li:nth-child(1) a{border-left: 0; border-top: 5px solid #329bba;}
+#content_menu2 .container > div > ul>li:nth-child(2) a{border-left: 0; border-top: 5px solid #366eae;}
+#content_menu2 .container > div > ul>li:nth-child(3) a{border-left: 0; border-top: 5px solid #be5016;}
+#content_menu2>div>div>ul>li>a.active{background-color: #fff;}
+#content_menu2>div>div>ul>li:nth-child(1)>a.fontC1{color: #329bba; background-color: #fff;}
+#content_menu2>div>div>ul>li:nth-child(2)>a.fontC2{color: #366eae; background-color: #fff;}
+#content_menu2>div>div>ul>li:nth-child(3)>a.fontC3{color: #be5016; background-color: #fff;}
+
 #content_menu2 div>p span >a{position: unset;}
 .uarr{display: none;}
 #content_menu2 .container div div{overflow: hidden; height: 106px; float: none; width: 100%;}

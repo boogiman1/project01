@@ -55,9 +55,14 @@
 #content_menu2 .container > p span a{font-weight: 400; font-size: 30px;}
 #content_menu2 .container > div > ul{float: none; display: flex;}
 #content_menu2 .container > div > ul>li{width: 33.3%;}
-#content_menu2 .container > div > ul li a{font-size: 14px; display: inline; font-weight: 300;}
-#content_menu2 .container > div > ul>li:first-child{border-left: 0; border-top: 2px solid #329bba; }
-#content_menu2 div>p span >a{position: unset;}
+#content_menu2 .container > div > ul li a{font-size: 14px;  display: inline-block; width: 100%; font-weight: 300; line-height: 44px;}
+#content_menu2 .container > div > ul>li:nth-child(1) a{border-left: 0; border-top: 2px solid #329bba;}
+#content_menu2 .container > div > ul>li:nth-child(2) a{border-left: 0; border-top: 2px solid #366eae;}
+#content_menu2 .container > div > ul>li:nth-child(3) a{border-left: 0; border-top: 2px solid #be5016;}
+#content_menu2>div>div>ul>li>a.active{background-color: #fff;}
+#content_menu2>div>div>ul>li:nth-child(1)>a.fontC1{color: #329bba; background-color: #fff;}
+#content_menu2>div>div>ul>li:nth-child(2)>a.fontC2{color: #366eae; background-color: #fff;}
+#content_menu2>div>div>ul>li:nth-child(3)>a.fontC3{color: #be5016; background-color: #fff;}#content_menu2 div>p span >a{position: unset;}
 .uarr{display: none;}
 #content_menu2 .container div div{overflow: hidden; height: 106px; float: none; width: 100%;}
 #content_menu2 .container div div ul{column-count: unset;}
@@ -106,6 +111,7 @@
 #content_book>.container>ul:last-child>li>a>p.book_title{margin-left: 0;}
 #content_book>.container>ul:last-child>li>a>p.book_author{margin-left: 0;}
 #content_book>div.container>ul:nth-child(2)>li>a::after{margin-left: 0;}
+/* //#content_book */
 
 
 /* #content_bottom */
