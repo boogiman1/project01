@@ -1,6 +1,7 @@
 var $gnb=document.querySelector('#gnb');
     $gnbOST=$gnb.offsetTop;
     $width100=document.querySelector('#gnb .width100')
+    $fontC=document.querySelectorAll('.gnb_ul>li>h3>a')
 console.log($gnb, $gnbOST);
 var win=window;
 win.addEventListener('scroll',function () {
@@ -8,8 +9,18 @@ win.addEventListener('scroll',function () {
     if($gnbOST<$currentSCT){
         $gnb.classList.add('sticky')
         $width100.classList.add('sticky')
+        $fontC[0].classList.add('sticky')
+        $fontC[1].classList.add('sticky')
+        $fontC[2].classList.add('sticky')
+        $fontC[3].classList.add('sticky')
+        $fontC[4].classList.add('sticky')
     }else{
         $gnb.classList.remove('sticky')
         $width100.classList.remove('sticky')
+        $fontC[0].classList.remove('sticky')
+        $fontC[1].classList.remove('sticky')
+        $fontC[2].classList.remove('sticky')
+        $fontC[3].classList.remove('sticky')
+        $fontC[4].classList.remove('sticky')
     }
 })

@@ -45,8 +45,9 @@
 #gnb{position: relative;}
 #gnb.sticky{position: fixed; top: 0; z-index: 1; background-color: #0b2b4c;}
 #gnb .width100{width: 100%; position: absolute; background-color: #fff; z-index: 1; }
-/* #gnb .width100.sticky{background-color: #0b2b4c;} */
-/* .gnb_ul>li>h3>a.sticky{color: #fff;} */
+#gnb .width100.sticky{background-image: linear-gradient(#0b2b4c 60px, #fff 31px, #fff);}
+.gnb_ul>li>h3>a.sticky{color: #fff;}
+#gnb.sticky ul{background-image: linear-gradient(#0b2b4c 60px, #fff 31px, #fff);}
 #gnb ul{overflow: hidden; transition: all 0.5s; width: 100%; height: 60px;}
 #gnb ul:hover{height: 630px; background-color: #fff;}
 
