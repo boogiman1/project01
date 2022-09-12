@@ -104,7 +104,7 @@
 #content_book>.container>ul:first-child>li{width: 47%;}
 #content_book>.container>ul:first-child>li:first-child{margin: 10px 0;}
 #content_book>.container>ul:first-child>li>a{font-size: 16px; width: unset;}
-#content_book>.container>ul:last-child{margin-top: 20px; width: 100%; overflow: hidden; justify-content: flex-start;}
+#content_book>.container>ul:last-child{margin-top: 20px; width: 100%; overflow: hidden; justify-content: flex-start; margin-left: 20px;}
 #content_book>.container>ul:last-child>li{width: 50%; float: none;}
 #content_book>.container>ul>li:last-child img{border-right: 1px solid #f4f4f4;}
 #content_book>.container>ul:last-child>li>a>*{margin-left: 0;}
@@ -135,15 +135,23 @@
 #content_bottom>.container>div:nth-child(2)>ul:last-child>li>a>p+span.date{float: none;}
 #content_bottom>.container>div:nth-child(2)>ul:nth-child(2)>li:last-child{display: none;}
 
-/* #footer_nav */
-#footer #footer_banner .container{display: flex;}
-#footer #footer_banner .container ul{float: none; display: flex; justify-content: space-evenly; align-items: center;}
-#footer #footer_banner .container ul li{float: none; width: 100%;}
-#footer #footer_banner .container ul:last-child li:nth-child(3){width: auto;}
-#footer #footer_banner .container ul:last-child li:nth-child(4){width: auto;}
-#footer #footer_banner .container ul:last-child li:nth-child(5){width: auto;}
-#footer #footer_banner .container ul li a img{margin-right: 0;}
-#footer #footer_banner .container ul:first-child{width: 60%;}
+/* #footer_banner */
+#footer_banner{display: none;}
 
-#footer #footer_banner .container ul:last-child{width: 40%;}
-#footer #footer_banner .container ul:last-child li p{margin-top: 4px;}
+/* #footer_nav */
+#footer #footer_nav{display: none;}
+
+/* #footer_info */
+#footer #footer_info .container div:first-child{background-color: #4a5862; padding: 0 36px;}
+#footer #footer_info .container{padding: 14px 0;}
+#footer #footer_info ul{float: none; display: flex; flex-wrap: wrap; justify-content: center;}
+#footer #footer_info ul li{border: 1px solid #fff; padding: 10px 0; width: 49%; text-align: center; overflow: hidden; text-overflow: ellipsis;white-space: nowrap;}
+#footer #footer_info ul li a{font-size: 14px; text-align: center; color: #fff;}
+#footer #footer_info ul li:first-child a{color: #ab2c08; padding-left: 20px;}
+#footer #footer_info .container form{width: 100%; font-size: 13px;}
+#footer #footer_info .container form select{width: 83%; font-size: 13px;}
+#footer #footer_info ul li, #footer #footer_info ul form{float: none;}
+#footer #footer_info .container div:nth-child(2) > *{float: none;}
+#footer #footer_info .container div:nth-child(2) > h2 a{width: 100%;}
+#footer #footer_info .container div:nth-child(2) > h2 img{width: 100%;}
+#footer #footer_info .container div:nth-child(2) > ul:nth-child(2)>li{width: 100%;}

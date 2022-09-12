@@ -8,7 +8,7 @@
 #header_top>.container{height: 200px; position: relative;}
 #header_top>div>a.header_top_banner{display: block; width: 50%; height: 100%;}
 #header_top>div>a.close_box01{position: absolute; font-size: 18px; font-weight: 500; letter-spacing: -1px; line-height: 1.3; color: #fff; right: 0;}
-#header_top>div>a.close_box01::before{content: '×'; font-size: 30px; width: 33px; height: 33px; font-weight: 400; background-color: transparent; border: 1px solid #fff; display: block; text-align: center; line-height: 25px; margin: 10px 0;}
+#header_top>div>a.close_box01::before{content: '×'; font-size: 30px; width: 33px; height: 33px; font-weight: 400; background-color: transparent; border: 1px solid #fff; display: block; text-align: center; line-height: 30px; margin: 10px 0;}
 #header_top>.container>label{font-size: 15px; color: #fff; position: absolute; right: 0; bottom: 1%; line-height: 1.3; letter-spacing: -1px; font-weight: 500;}
 #header_top>.container>label>input{width: 16px; height: 16px; margin-right: 5px; margin-bottom: 4px; vertical-align: middle;}
 
