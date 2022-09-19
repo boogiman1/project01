@@ -2,7 +2,6 @@ var $gnb=document.querySelector('#gnb');
     $gnbOST=$gnb.offsetTop;
     $width100=document.querySelector('#gnb .width100')
     $fontC=document.querySelectorAll('.gnb_ul>li>h3>a')
-console.log($gnb, $gnbOST);
 var win=window;
 win.addEventListener('scroll',function () {
     var $currentSCT=document.documentElement.scrollTop;

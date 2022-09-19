@@ -13,6 +13,23 @@ targetLink.each(function () {
 
     })
 })
+// #content_book tab
+var contentBook = $('#content_book'), targetLink2 = contentBook.find('.container ul li a'), tabContent2 = contentBook.find('.container>div>ul');
+tabContent2.eq(0).show()
+targetLink2.each(function () {
+    var tg = $(this);
+    var tgAnc = tg.attr('href')
+    tg.click(function (e) {
+        e.preventDefault()
+        targetLink2.removeClass('active')
+        tg.addClass('active')
+        tabContent2.hide()
+        $(tgAnc).show()
+
+    })
+})
+
+
 
 // 팝업 창 닫기
 function header_popup() {
@@ -28,16 +45,12 @@ $(function () {
 
     // 슬라이드 위치 설정
     var slidePos = slide.each(function (i/* ,o */) {
-        // each 를 쓸 때 값을 꺼내기 위해 i, o 사용 / i번 째를 꺼낸다 i=index번호 자리임 / o는 여기서 안씀
         $(this).css('left', i * 100 + '%')
     })
-    // 슬라이드 이미지 부분 - setInterval : 시간마다 돌리기
-    // auto play
     timer()
-    function timer() { //인덱스 번호를 만들어줌
+    function timer() {
         stopTimer = setInterval(function () {
             var prev = slide.eq(current)
-            console.log(prev);
             move(prev, 0, -100 + '%')
             var prevPager = pager.eq(current);
             prevPager.removeClass('on')
@@ -50,14 +63,10 @@ $(function () {
             var nextPager = pager.eq(current)
             nextPager.addClass('on')
             // 카운터 동적 생성
-            cnt(current)
+            // cnt(current)
         }, 2000)
     }
 
-    // 움직이는 함수 슬라이드 애니메이트
-    // function move(대상, 출발, 도착){
-    //     대상.css('left',출발).stop().animate({left:도착},1000)
-    // }
     function move(tg, start, end) {
         tg.css('left', start).stop().animate({ left: end }, 1000)
     }
@@ -81,7 +90,6 @@ $(function () {
         var prev = slide.eq(current) // 0
         var prevPager = pager.eq(current);
         prevPager.removeClass('on')
-        console.log(prev);
         move(prev, 0, -100 + '%') // 1
         current++;
         if (current == slideCount) {
@@ -91,13 +99,12 @@ $(function () {
         var nextPager = pager.eq(current)
         nextPager.addClass('on')
         move(next, 100 + '%', 0)
-        cnt(current)
+        // cnt(current)
     })
     leftBtn.click(function () {
         var prev = slide.eq(current) // 0
         var prevPager = pager.eq(current);
         prevPager.removeClass('on')
-        console.log(prev);
         move(prev, 0, '100%')
         current--;
         if (current < 0) {
@@ -118,8 +125,7 @@ $(function () {
         cnt(current)
     })
     function pagerMove(i) {
-        //i 쓰는 이유는 호줄 하는 곳에서 불러 오려고 하기 때문 여기선 pager에 click에서 태어난 아이 click을 하면 태어난다 var는 변수를 생성하는데 i를 만들었다. 그 i를 가져오는 것 -> 다른 함수에 전달하기 위해 만듬
-        if (current == i) return; // 같은 버튼 누르면 다시 나오는데 그거 안하게함
+        if (current == i) return; 
         var currentEl = slide.eq(current)
         var nextEl = slide.eq(i)
         currentEl.css('left', '0').stop().animate({ left: '-100%' }, 500)

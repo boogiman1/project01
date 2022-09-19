@@ -100,11 +100,12 @@
 #content_book>.container>ul{float: none; display: flex; width: 100%; justify-content: space-evenly;}
 #content_book>.container>ul:first-child>li>a{font-size: 16px;}
 #content_book>.container>ul:first-child>li:first-child{margin-top: 10px;}
-#content_book>.container>ul:last-child{margin-top: 20px; width: 100%;}
-#content_book>.container>ul:last-child>li{width: 25%;}
-#content_book>.container>ul>li:last-child img{border-right: 1px solid #f4f4f4;}
-#content_book>.container>ul:last-child li a p.book_title{font-size: 14px;}
-#content_book>.container>ul:last-child li a p.book_author{font-size: 14px;}
+#content_book>.container>div{margin-top: 20px; width: 100%;}
+/* #content_book>.container>div>ul{margin-top: 20px; width: 100%;} */
+#content_book>.container>div>ul>li{width: 20%;}
+#content_book>.container>div>ul>li:last-child img{border-right: 1px solid #f4f4f4;}
+#content_book>.container>div>ul li a p.book_title{font-size: 14px;}
+#content_book>.container>div>ul li a p.book_author{font-size: 14px;}
 
 /* #content_bottom */
 #content_bottom{height: auto; padding: 0 36px; box-sizing: border-box;}
