@@ -234,7 +234,7 @@
         top: -10%;
     }
 }
-/* #content_book>div>ul:nth-child(1)>li>a:hover{border: 1px solid black; color: #303030; text-indent: 15px; line-height: 36px;} */
+
 #content_book>div>ul:nth-child(1)>li:first-child{border: #165698;}
 #content_book>div>ul:nth-child(1)>li>a.active{ color: #f1f1f1; line-height: 52px; background-color: #165698; margin-top: 0; border: none;}
 #content_book>div>ul:nth-child(1)>li>a:hover{transform: scale(1.06); color: #f1f1f1; border: none;}
