@@ -23,3 +23,18 @@ win.addEventListener('scroll',function () {
         $fontC[4].classList.remove('sticky')
     }
 })
+
+const btn=document.querySelector('#top_button');
+window.addEventListener('scroll',function(){
+    let scrollAmount=this.scrollY;
+    // console.log(scrollAmount);
+    if (scrollAmount>=300) {
+        btn.classList.add('visible')
+    } else {
+        btn.classList.remove('visible')
+    }
+})
+btn.addEventListener('click',function(e){
+    e.preventDefault();
+    document.querySelector(btn.getAttribute('href')).scrollIntoView({behavior:'smooth'})
+})

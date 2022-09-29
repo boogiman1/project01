@@ -55,3 +55,4 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+html{overflow-x: hidden; overflow-y: scroll;}

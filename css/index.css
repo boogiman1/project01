@@ -1,5 +1,3 @@
-
-
 /* header */
 
 /* header_top */
@@ -337,3 +335,7 @@
 #footer_info>div>div:last-child>ul>li{margin-top: 8px;}
 #footer_info>div>div:last-child>ul:last-child{margin-top: 25px;}
 #footer_info>div>div:last-child>ul>li>small{font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 15px; color: #515151;}
+
+/* top 버튼 */
+#top_button{display: block; width: 45px; height: 38px; line-height: 45px; opacity: .8; background: #535252 no-repeat; text-align: center;color: #Fff; border-radius: 4px; padding-top: 7px; background-image: url(../img/fixed_top_btn.png); background-position: 50% 20%; position: fixed; right: 32px; bottom: 20px; opacity: 0; transition: all .8s;}
+#top_button.visible{opacity: 1; transition: all .8s;}
