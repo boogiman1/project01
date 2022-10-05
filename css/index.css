@@ -1,7 +1,7 @@
 /* header */
 
 /* header_top */
-#header_top {background: url(../img/header_banner.png) no-repeat; background-size: cover 80%; max-width: 1903px; margin: 0 auto; background-position-y: -16px;}
+#header_top {background: url(../img/header_banner.png) no-repeat; background-size: cover; max-width: 1903px; margin: 0 auto; background-position-y: -16px;}
 
 #header_top>.container{height: 200px; position: relative;}
 #header_top>div>a.header_top_banner{display: block; width: 50%; height: 100%;}
