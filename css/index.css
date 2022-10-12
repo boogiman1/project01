@@ -1,14 +1,12 @@
-
-
 /* header */
 
 /* header_top */
-#header_top {background: url(../img/header_banner.png) no-repeat; background-size: cover 80%; max-width: 1903px; margin: 0 auto; background-position-y: -16px;}
+#header_top {background: url(../img/header_banner.png) no-repeat; background-size: cover; max-width: 1903px; margin: 0 auto; background-position-y: -16px;}
 
 #header_top>.container{height: 200px; position: relative;}
 #header_top>div>a.header_top_banner{display: block; width: 50%; height: 100%;}
 #header_top>div>a.close_box01{position: absolute; font-size: 18px; font-weight: 500; letter-spacing: -1px; line-height: 1.3; color: #fff; right: 0;}
-#header_top>div>a.close_box01::before{content: '×'; font-size: 30px; width: 33px; height: 33px; font-weight: 400; background-color: transparent; border: 1px solid #fff; display: block; text-align: center; line-height: 25px; margin: 10px 0;}
+#header_top>div>a.close_box01::before{content: '×'; font-size: 30px; width: 33px; height: 33px; font-weight: 400; background-color: transparent; border: 1px solid #fff; display: block; text-align: center; line-height: 30px; margin: 10px 0;}
 #header_top>.container>label{font-size: 15px; color: #fff; position: absolute; right: 0; bottom: 1%; line-height: 1.3; letter-spacing: -1px; font-weight: 500;}
 #header_top>.container>label>input{width: 16px; height: 16px; margin-right: 5px; margin-bottom: 4px; vertical-align: middle;}
 
@@ -172,7 +170,7 @@
 
 #content_calendar>.container>div>div>span{display: block; letter-spacing: -0.5px;}
 #content_calendar>.container>div>div .info_title{font-size: 18px; color: #595959; font-weight: 500; margin-bottom: 23px; letter-spacing: -1px;}
-#content_calendar>.container>div>div .info_text{font-size: 16px; color: #6a6a6a; font-weight: 300; margin-top: 19px; overflow: hidden; text-overflow: ellipsis; width: 259px; letter-spacing: -1px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height:1.4;}
+#content_calendar>.container>div>div .info_text{font-size: 16px; color: #6a6a6a; font-weight: 300; margin-top: 19px; overflow: hidden; text-overflow: ellipsis; width: 259px; letter-spacing: -1px; /* display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; */ display: block; line-height:1.4;}
 
 /* //div:nth-child(2)div:nth-child(2) */
 
@@ -187,8 +185,29 @@
 #content_calendar>.container>div:nth-child(4)>div:nth-child(1){margin-right: 30px;}
 #content_calendar>.container>div:nth-child(4)>div:nth-child(2){margin-right: 14px;}
 #content_calendar>.container>div:nth-child(4)>div:nth-child(3){margin-right: 14px;}
-
 #content_calendar>.container>div>.calendar_title_side{font-size: 15px; font-weight: 500; letter-spacing: -1px; line-height: 1.3;}
+
+/*  */
+#content_calendar>.container>div:nth-child(4)>div:nth-child(1){position: relative; overflow: hidden;}
+.visual_slide li a{text-decoration: none; display: block; text-indent: -999999px;}
+.visual_slide li{position: absolute; background-repeat: no-repeat; background-position: 50% 0; width: 100%; height: 100%;}
+.visual1_0{background-image: url(../img/main_wide_main_public_1.png); background-size: cover;}
+.visual1_1{background-image: url(../img/main_wide_main_public_2.png); background-size: cover;}
+.visual1_2{background-image: url(../img/main_wide_main_public_3.png); background-size: cover;}
+.visual1_3{background-image: url(../img/main_wide_main_public_4.png); background-size: cover;}
+.visual1_4{background-image: url(../img/main_wide_main_public_5.png); background-size: cover;}
+
+/* controls */
+.btnImg{position: relative; width: 168%; margin: auto; top: 0px; right: 100px; height: 21px; background-color: #0B2B4C; line-height: 21px;}
+.btnImg img{width: 15px;}
+.btnImg .prev{position: absolute; cursor: pointer; left: 100px;}
+.btnImg .next{position: absolute; cursor: pointer; right: 100px;}
+
+/* pager */
+.hidden{display: block; overflow: hidden; width: 0; height:0; line-height: 0; text-indent: -99999999px;}
+#brandVisual .buttonList:after{content: ''; display: block; clear: both;}
+#brandVisual .buttonList>li{background: url(../img/btnVisual.png) no-repeat 0 -17px; width: 16px; height: 17px; overflow: hidden; position: relative; top: -20px; left: 24%; float: left; margin: 0 8px; cursor: pointer;}
+#brandVisual .buttonList>li.on{background-position: 0 0;}
 
 /* //div:nth-child(4) */
 
@@ -213,25 +232,48 @@
         top: -10%;
     }
 }
-/* #content_book>div>ul:nth-child(1)>li>a:hover{border: 1px solid black; color: #303030; text-indent: 15px; line-height: 36px;} */
+
 #content_book>div>ul:nth-child(1)>li:first-child{border: #165698;}
-#content_book>div>ul:nth-child(1)>li:first-child>a{ color: #f1f1f1; line-height: 52px; background-color: #165698; margin-top: 0; border: none;}
+#content_book>div>ul:nth-child(1)>li>a.active{ color: #f1f1f1; line-height: 52px; background-color: #165698; margin-top: 0; border: none;}
 #content_book>div>ul:nth-child(1)>li>a:hover{transform: scale(1.06); color: #f1f1f1; border: none;}
 
 
-#content_book>div>ul:nth-child(2){width: 1020px; height: 332px;}
-#content_book>div>ul:nth-child(2)>li>a>p{width: 160px; height: 40px; text-align: center; letter-spacing: -1px;}
-#content_book>div>ul:nth-child(2)>li>a>p.book_title{font-size: 16px; color: #000; font-weight: 430; margin-top: 11px; margin-left:34px;}
-#content_book>div>ul:nth-child(2)>li>a>p.book_author{margin-top: 8px; color: #6a6a6a; font-size: 16px; margin-left:34px;}
-#content_book>div>ul:nth-child(2)>li>a>img{ width: 170px; height: 240px; margin-left: 34px; }
-#content_book>div>ul:nth-child(2)>li:last-child>a>img{ margin-right: 0px;}
-#content_book>div>ul:nth-child(2)>li:nth-child(1)>a{position: relative;}
-#content_book>div>ul:nth-child(2)>li:nth-child(1)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '삶은 속도가 아니라 방향이다'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all; background-image: url(../img/ddabong.png); background-repeat: no-repeat; background-position: 50%;}
-#content_book>div>ul:nth-child(2)>li:nth-child(2)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '결국 Z세대가 세상을 지배한다'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ddabong.png); background-repeat: no-repeat; background-position: 50%;}
-#content_book>div>ul:nth-child(2)>li:nth-child(3)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '바람이 강하게 불고 있다'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ddabong.png); background-repeat: no-repeat; background-position: 50%;}
-#content_book>div>ul:nth-child(2)>li:nth-child(4)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '내가 원하는 것을 나도 모를 때'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ddabong.png); background-repeat: no-repeat; background-position: 50%;}
-#content_book>div>ul:nth-child(2)>li:nth-child(5)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '풍덩!'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ddabong.png); background-repeat: no-repeat; background-position: 50%;}
-#content_book>div>ul:nth-child(2)>li>a:hover::after{display: block;}
+#content_book>div>div{width: 1020px; height: 332px; position: relative;}
+#content_book>div>div>ul{display: none; position: absolute;}
+#content_book>div>div>ul>li>a>p{width: 160px; height: 40px; text-align: center; letter-spacing: -1px;}
+#content_book>div>div>ul>li>a>p.book_title{font-size: 16px; color: #000; font-weight: 430; margin-top: 11px; margin-left:34px;}
+#content_book>div>div>ul>li>a>p.book_author{margin-top: 8px; color: #6a6a6a; font-size: 16px; margin-left:34px;}
+#content_book>div>div>ul>li>a>img{ width: 170px; height: 240px; margin-left: 34px; }
+#content_book>div>div>ul>li:last-child>a>img{ margin-right: 0px;}
+#content_book>div>div>ul>li:nth-child(1)>a{position: relative;}
+#content_book>div>div>ul>li:nth-child(1)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '삶은 속도가 아니라 방향이다'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all; background-image: url(../img/ddabong.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul>li:nth-child(2)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '결국 Z세대가 세상을 지배한다'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ddabong.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul>li:nth-child(3)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '바람이 강하게 불고 있다'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ddabong.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul>li:nth-child(4)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '내가 원하는 것을 나도 모를 때'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ddabong.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul>li:nth-child(5)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '풍덩!'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ddabong.png); background-repeat: no-repeat; background-position: 50%;}
+/* 2 */
+#content_book>div>div>ul:nth-child(2)>li:nth-child(1)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '나는, 휴먼'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all; background-image: url(../img/ico_new.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul:nth-child(2)>li:nth-child(2)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '낯선 삼일운동'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ico_new.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul:nth-child(2)>li:nth-child(3)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '숨을 참다 : 코로나 시대'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ico_new.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul:nth-child(2)>li:nth-child(4)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '가구, 집을 갖추다'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ico_new.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul:nth-child(2)>li:nth-child(5)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '유령의 마음으로'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ico_new.png); background-repeat: no-repeat; background-position: 50%;}
+/* 3 */
+#content_book>div>div>ul:nth-child(3)>li:nth-child(1)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '이해총서-한국 영화 역사'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all; background-image: url(../img/ico_speaker.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul:nth-child(3)>li:nth-child(2)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '이해총서-한 단어 프레젠테이션'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ico_speaker.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul:nth-child(3)>li:nth-child(3)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '이해총서-팬덤 문화'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ico_speaker.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul:nth-child(3)>li:nth-child(4)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '이해총서-파워 콘텐츠 공식'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ico_speaker.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul:nth-child(3)>li:nth-child(5)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '이해총서-토론'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ico_speaker.png); background-repeat: no-repeat; background-position: 50%;}
+/* 4 */
+#content_book>div>div>ul:nth-child(4)>li:nth-child(1)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '전세계 100개국 이상 60개 이상의 언어로 된 신문'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all; background-image: url(../img/ico_db.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul:nth-child(4)>li:nth-child(2)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '국내 학술지 약 200여 종의 원문 제공'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ico_db.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul:nth-child(4)>li:nth-child(3)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: 'National Geographic 잡지의 초판부터 현재'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ico_db.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul:nth-child(4)>li:nth-child(4)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '환경 및 환경공학 분야의 1200종의 학술자'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ico_db.png); background-repeat: no-repeat; background-position: 50%;}
+#content_book>div>div>ul:nth-child(4)>li:nth-child(5)>a::after{ width: 170px; height: 240px; margin-left: 34px; position: absolute; background-color: rgba(00, 00, 00, .7); content: '클래식 음악 위주의 스트리밍 서비스'; color: #f1f1f1; font-size: 16px; line-height: 35px; font-weight: 500; display: none; transform: translateY(-141.8%); text-align: center; word-break: keep-all;background-image: url(../img/ico_db.png); background-repeat: no-repeat; background-position: 50%;}
+
+#content_book>div>div>ul>li>a:hover::after{display: block;}
+#content_book>div>div>ul:nth-child(2)>li>a:hover::after{display: block;}
+#content_book>div>div>ul:nth-child(3)>li>a:hover::after{display: block;}
+#content_book>div>div>ul:nth-child(4)>li>a:hover::after{display: block;}
 
 
 /* content_bottom */
@@ -291,5 +333,11 @@
 
 #footer_info>div>div:last-child>h2{width: 213px; height: 49px; background-color: #fff; margin-right: 100px;}
 #footer_info>div>div:last-child>ul>li{margin-top: 8px;}
-#footer_info>div>div:last-child>ul:last-child{margin-top: 25px;}
+#footer_info>div>div:last-child>ul:nth-child(3){margin-top: 25px;}
 #footer_info>div>div:last-child>ul>li>small{font-family: 'Noto Sans KR', sans-serif; font-weight: 300; font-size: 15px; color: #515151;}
+
+#footer_info>div>div:last-child>div:last-child{display: flex; justify-content: center; margin-top: 25px;}
+
+/* top 버튼 */
+#top_button{display: block; width: 45px; height: 38px; line-height: 45px; opacity: .8; background: #535252 no-repeat; text-align: center;color: #Fff; border-radius: 4px; padding-top: 7px; background-image: url(../img/fixed_top_btn.png); background-position: 50% 20%; position: fixed; right: 32px; bottom: 20px; opacity: 0; transition: all .8s;}
+#top_button.visible{opacity: 1; transition: all .8s;}

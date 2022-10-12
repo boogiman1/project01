@@ -19,8 +19,7 @@
 #content_bottom{height: 364px;}
 #footer_banner{height: 108px;}
 #footer_nav{height: 54.09px;}
-#footer_info{height: 236.59px;}
 
 .container{max-width: 1240px; margin: 0 auto;}
 
-body{font-family: 'NotoKR', 'Malgun Gothic', 'gothic', '고딕', '새굴림', Arial, sans-serif;}
+body{font-family: 'NotoKR', 'Malgun Gothic', 'gothic', '고딕', '새굴림', Arial, sans-serif; overflow-x: hidden; overflow-y: scroll;}
