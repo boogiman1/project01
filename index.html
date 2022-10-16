@@ -17,40 +17,27 @@
 
     <meta name="twitter:image" content="img/og_120x120.png">
     <meta name="twitter:description" content="국립중앙도서관을 펼쳐 방문하신 것을 환영합니다..">
+    
     <!-- favicon meta -->
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage"
-        content="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57"
-        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60"
-        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72"
-        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76"
-        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114"
-        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120"
-        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144"
-        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152"
-        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"
-        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96"
-        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico/favicon-16x16.png">
-    <link rel="/manifest" href="../project1/fivicon/dd4f3f58ab449e4205d2ee33ff4abbb5.ico//manifest.json">
+    <!-- favicon link -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,9 +82,11 @@
                         <li class="fl"><a href="sub_site_board/index.html">바구니</a></li>
                         <li class="fl"><a href="sub_site_board/index.html">ENGLISH</a></li>
                         <li class="fl">
-                            <p><input type="text" name="search" id="search" placeholder="홈페이지 내 검색"><label
+                            <form action="#" method="get">
+                                <p><input type="text" name="search" id="search" placeholder="홈페이지 내 검색"><label
                                     for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
-                            </p>
+                                </p>
+                            </form>
                         </li>
                     </ul>
                 </div>
@@ -270,8 +259,10 @@
                 <div class="container">
                     <div>
                         <div class="search_bar fl">
-                            <label><input type="search" placeholder="검색어를 입력해주세요"
-                                    class="content_search_input_search fl"></label>
+                            <form action="#" method="post">
+                                <label><input type="search" placeholder="검색어를 입력해주세요"
+                                        class="content_search_input_search fl"></label>
+                            </form>
                             <div></div>
                         </div>
                         <input type="button" value="검색" class="content_search_input_button1 fl">
